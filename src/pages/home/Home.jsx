@@ -11,16 +11,12 @@ const Home = () => {
             <div>
               <div className="flex items-baseline justify-between">
                 <div>
-                  {/* <Welcomeheading>
-                    <h2 className="text-lg">
-                      Welcome To 100 - Free - Frontend - Challengs
-                    </h2>
-                  </Welcomeheading> */}
+                 
 
                 </div>
 
               </div>
-              {/* <Nameheader name="Music Event"/> */}
+            
             </div>
             <div className="mt-4">
               <div className="px-6 py-4 bg-white shadow-md rounded-lg">
@@ -32,7 +28,7 @@ const Home = () => {
                       <div className='flex flex-col gap-2'>
                      
 
-                      Home
+                      <h1 className='text-2xl font-600'>Welcome To 100 - Free - Frontend - Challengs</h1>
                       </div>
                     </div>
                   </div>

@@ -42,7 +42,7 @@ const FormWithUseFromHook = () => {
 
               <h1>Render {render}</h1>
 
-                        <form onSubmit={handleSubmit(onSubmit)} className="max-w-sm mx-auto">
+                        <form onSubmit={handleSubmit(onSubmit)} className="max-w-sm mx-auto w-[400px] px-4">
                           <div className="mb-5">
                             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                             <input {...register("email", { required: "Email Address is required", pattern: {

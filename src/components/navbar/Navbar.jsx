@@ -8,7 +8,7 @@ const Navbar = () => {
     <>
     
     <div className="flex-shrink-0 w-64 bg-gray-900">
-        <a href="#">
+        <NavLink to="/">
           <div
             className="flex items-center h-16 px-4 bg-gray-900 text-xl text-white font-medium"
           >
@@ -102,7 +102,7 @@ c178 75 200 92 200 159 0 40 -10 62 -61 147 -34 55 -132 219 -219 365 -86 146
 
             <div className="ml-2" >100</div>
           </div>
-        </a>
+        </NavLink>
         <div>
           <div className="px-2 py-2">
             <div>

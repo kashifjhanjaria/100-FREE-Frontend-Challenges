@@ -92,7 +92,7 @@ const Passwordgenerator = () => {
 
 
 
-                    <div className='w-[300px] h-auto border p-3 bg-gray-400 flex flex-col gap-2'>
+                    <div className='w-[300px] h-auto border p-3  flex flex-col gap-2'>
                       <div className='flex flex-col'>
                         <label htmlFor="">Pasword Generator</label>
                         <input type="text"
