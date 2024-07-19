@@ -5,6 +5,7 @@ import { ShopContext } from "./ShopContext";
 
  const ShopContextProvider = ({children})=>{
   const [products , setProducts] = useState(null);
+  const [singleproduct , setSingleProduct ] = useState(null);
  
   // console.log(products, "Products State");
   useEffect(()=>{
@@ -13,12 +14,13 @@ import { ShopContext } from "./ShopContext";
           const result = await reponse.json();
           // console.log(result , 'context');
           setProducts(result);
+          setSingleProduct(result);
       }
       getproducts();
   }, [])
 
     return (
-      <ShopContext.Provider value={products}>
+      <ShopContext.Provider value={products }>
         {children}
       </ShopContext.Provider>
     );

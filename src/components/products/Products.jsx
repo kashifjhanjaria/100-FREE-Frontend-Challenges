@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../hook/context/cartcontext/CartContext';
+import { NavLink, useParams } from 'react-router-dom';
 
 const Products = ({items , products}) => {
     const [addToCart , setAddToCart] = useContext(CartContext);
-
+   
     const addToCartHandler = (id) => {
         console.log(id);
     
@@ -29,11 +30,11 @@ const Products = ({items , products}) => {
  <>
 
             <div className="lg:w-1/3 md:w-1/2 p-4 w-full cursor-pointer hover:shadow-lg">
-        <a className="block relative h-48 rounded overflow-hidden">
+        <NavLink to={`${items.id}`} className="block relative h-48 rounded overflow-hidden">
           <img alt="ecommerce"
            className="object-cover object-center w-full h-full block" 
            src={items.image}/>
-        </a>
+        </NavLink>
         <div className="mt-4">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1 " title={items.title}>{items.title.substring(0 , 20) + '...'}</h3>
           <h2 className="text-gray-900 title-font text-lg font-medium">{items.category}</h2>

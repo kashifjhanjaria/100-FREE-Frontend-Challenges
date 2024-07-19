@@ -12,8 +12,8 @@ const ECommerce = () => {
     const [addToCart , setAddToCart] = useContext(CartContext);
     const [isShowCartOpen , setIsShowCartOpen] = useState(false);
    const sheemar = [1,2 , 3, 4, 5, 6];
-    // console.log( 'products',products);
-    
+
+   
 
   
       const showCartHandler = ()=>{
@@ -103,7 +103,7 @@ const ECommerce = () => {
     <div className="flex flex-wrap -m-4">
       
       
-      {products  ? products.map(items=><Products key={items.id} items={items} products={products}/>): sheemar.map((item, index)=><Sheemar key={index}/> ) }
+      {products ? products.map(items=><Products key={items.id} items={items} products={products}/>): sheemar.map((item, index)=><Sheemar key={index}/> ) }
       {/* {products  ?sheemar.map((item, index)=><Sheemar key={index}/> ) :    products.map(items=><Products key={items.id} items={items}/>) } */}
       
       

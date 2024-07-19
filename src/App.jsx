@@ -19,6 +19,7 @@ import ECommerce from './pages/e-commerce/ECommerce'
 import ShopContextProvider from './hook/context/ShopContextProvider'
 import CartContextProvider from './hook/context/cartcontext/CartContextProvider'
 import NameandNumber from './pages/nameandnumber/NameandNumber'
+import Singleproduct from './components/singleproduct/Singleproduct'
 
 const Modle = lazy(()=>import('./pages/modal/Modal'));
 function App() {
@@ -38,8 +39,12 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='counterwithuseState' element={<CounterUseState/>}/>
     <Route path='counterwithusereducer' element={<CounterWithUseReducer/>}/>
     <Route path='usefetchcustomhook' element={<RandomUserCustomHook/>}/>
-    <Route path='e-commerce' element={<ECommerce/>}/>
+    <Route path='/e-commerce' element={<ECommerce />}>
+          
+        </Route>
+        <Route path="e-commerce/:id" element={<Singleproduct />} />
     <Route path='nameandnumber' element={<NameandNumber/>}/>
+    
   </Route>
 ))
   
