@@ -20,6 +20,8 @@ import ShopContextProvider from './hook/context/ShopContextProvider'
 import CartContextProvider from './hook/context/cartcontext/CartContextProvider'
 import NameandNumber from './pages/nameandnumber/NameandNumber'
 import Singleproduct from './components/singleproduct/Singleproduct'
+import Todoapp from './pages/todoapp/Todoapp'
+import PageNotFound from './pages/pagenotefound/PageNotFound'
 
 const Modle = lazy(()=>import('./pages/modal/Modal'));
 function App() {
@@ -44,6 +46,8 @@ const router = createBrowserRouter(createRoutesFromElements(
         </Route>
         <Route path="e-commerce/:id" element={<Singleproduct />} />
     <Route path='nameandnumber' element={<NameandNumber/>}/>
+    <Route path='todoapp' element={<Todoapp/>}/>
+    <Route path='*' element={<PageNotFound/>}/>
     
   </Route>
 ))

@@ -3,6 +3,7 @@ import Navbar from '../components/navbar/Navbar'
 import { Outlet } from 'react-router-dom'
 import Footer from '../components/footer/Footer'
 import Topbar from '../components/topbar/Topbar'
+import Loading from '../components/loading/Loading'
 
 const Routelayout = () => {
   return (
@@ -15,7 +16,7 @@ const Routelayout = () => {
      <Navbar/>
       <div className="flex-grow flex flex-col">
        <Topbar/>
-       <Suspense fallback="looodddinnnnggg...">
+       <Suspense fallback={<Loading/>}>
        <Outlet/>
        </Suspense>
         </div>
