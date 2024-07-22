@@ -23,6 +23,8 @@ import Singleproduct from './components/singleproduct/Singleproduct'
 import Todoapp from './pages/todoapp/Todoapp'
 import PageNotFound from './pages/pagenotefound/PageNotFound'
 import Timer from './pages/timer/Timer'
+import Debouncing from './pages/debouncing/Debouncing'
+import Throttling from './pages/throttling/Throttling'
 
 const Modle = lazy(()=>import('./pages/modal/Modal'));
 function App() {
@@ -49,7 +51,10 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='nameandnumber' element={<NameandNumber/>}/>
     <Route path='todoapp' element={<Todoapp/>}/>
     <Route path='timer' element={<Timer/>}/>
+    <Route path='debouncing' element={<Debouncing/>}/>
+    <Route path='throttling' element={<Throttling/>}/>
     <Route path='*' element={<PageNotFound/>}/>
+    
     
   </Route>
 ))

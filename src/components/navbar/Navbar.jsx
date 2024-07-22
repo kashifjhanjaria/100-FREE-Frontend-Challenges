@@ -211,6 +211,18 @@ c178 75 200 92 200 159 0 40 -10 62 -61 147 -34 55 -132 219 -219 365 -86 146
                 </NavLink>
               
               </li>
+              <li className="mt-3 hover:bg-red-500 py-1 px-1 rounded-lg">
+              <NavLink to="debouncing" >
+              Debouncing
+                </NavLink>
+              
+              </li>
+              <li className="mt-3 hover:bg-red-500 py-1 px-1 rounded-lg">
+              <NavLink to="throttling" >
+              Throttling
+                </NavLink>
+              
+              </li>
             </ul>
           </div>
         </div>
